@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دِيمة | قلم إزالة الشعر الكهربائي (2 في 1)</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Cairo', 'sans-serif'] },
+                    colors: {
+                        primary: '#fff0f5',
+                        secondary: '#ff99cc',
+                        accent: '#e673ac',
+                        textMain: '#2d3748'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #fcfcfc; }
+        .package-option { transition: all 0.2s ease; cursor: pointer; border: 2px solid #edf2f7; }
+        .package-option.active { border-color: #ff99cc; background-color: #fff0f5; }
+        .package-option.active .radio-circle { border-color: #ff99cc; background-color: #ff99cc; box-shadow: inset 0 0 0 3px white; }
+        .feature-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(255, 153, 204, 0.2); }
+    </style>
+</head>
+<body class="text-textMain antialiased selection:bg-secondary selection:text-white">
+
+    <div class="bg-gradient-to-r from-accent to-secondary text-white text-center py-2 text-sm font-bold tracking-wide shadow-sm">
+        ✨ توصيل مجاني لجميع محافظات العراق ✨
+    </div>
+
+    <!-- الهيدر -->
+    <header class="bg-white border-b border-gray-100 py-3 shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-center">
+            <img src="https://cdn.imgpile.com/f/ziX3TUa.png" alt="شعار ديمة" class="h-14 w-auto transition-transform hover:scale-105">
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- عمود الصورة (مثبت أثناء النزول) -->
+            <div class="lg:col-span-5 relative">
+                <div class="sticky top-28 bg-white rounded-3xl p-6 flex justify-center items-center h-[400px] md:h-[550px] border border-gray-100 shadow-xl shadow-primary/50 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary to-transparent opacity-80"></div>
+                    <img src="https://i.imgur.com/3jI4uKL.png" alt="القلم السحري" class="relative z-10 max-h-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-accent font-bold text-xs shadow-sm border border-secondary/20 z-20">
+                        <i class="fa-solid fa-fire text-orange-500"></i> الأكثر مبيعاً
+                    </div>
+                </div>
+            </div>
+
+            <!-- عمود التفاصيل والطلب -->
+            <div class="lg:col-span-7 flex flex-col justify-start">
+                
+                <div class="mb-8">
+                    <p class="text-accent font-bold text-sm mb-2">✨ بشرة ناعمة... بثوانٍ ومن دون ألم</p>
+                    <h1 class="text-3xl md:text-4xl font-black mb-4 text-gray-800 leading-tight">قلم إزالة الشعر الكهربائي <br/><span class="text-secondary">(2 في 1)</span></h1>
+                    
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="text-yellow-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="text-gray-500 text-sm font-semibold underline decoration-dotted cursor-pointer hover:text-accent">(128 تقييم من العملاء)</span>
+                    </div>
+
+                    <div class="flex items-end gap-2 mb-6 bg-primary/30 inline-block p-4 rounded-2xl border border-secondary/20 w-full md:w-auto">
+                        <div class="text-4xl font-black text-accent tracking-tight" id="display-price">12,000</div>
+                        <div class="text-xl font-bold text-gray-500 pb-1">د.ع</div>
+                    </div>
+                    
+                    <p class="text-gray-600 font-medium mb-8 leading-relaxed text-lg bg-white p-4 rounded-xl border-r-4 border-accent shadow-sm">
+                        ودّعي الشفرات التقليدية والنتف المؤلم! استمتعي ببشرة ناعمة ونظيفة في أي وقت. صُمم هذا القلم ليمنحك إزالة دقيقة وآمنة لشعر <span class="font-bold text-gray-800">الوجه، الأنف، الأذن، والحواجب</span>، دون خدوش أو تهيج، ليكون رفيقك المثالي أينما كنتِ.
+                    </p>
+                    
+                    <!-- المزايا الأربعة (لماذا ستحبينه؟) -->
+                    <h3 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-heart text-accent"></i> لماذا سيكون رفيقك المفضل؟</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="feature-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm transition duration-300">
+                            <div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-accent mb-3 text-lg"><i class="fa-solid fa-feather-pointed"></i></div>
+                            <h4 class="font-bold text-gray-800 mb-1">إزالة لطيفة بدون ألم</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">تقنية حلاقة دقيقة تزيل الشعيرات من السطح بلطف تام، لتمنع الاحمرار حتى للبشرة الحساسة.</p>
+                        </div>
+                        <div class="feature-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm transition duration-300">
+                            <div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-accent mb-3 text-lg"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <h4 class="font-bold text-gray-800 mb-1">مكياج مثالي بدقائق</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">تخلصي من الزغب ليصبح تطبيق الفاونديشن والكونسيلر أكثر سلاسة وبلمسة نهائية خالية من العيوب.</p>
+                        </div>
+                        <div class="feature-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm transition duration-300">
+                            <div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-accent mb-3 text-lg"><i class="fa-solid fa-battery-full"></i></div>
+                            <h4 class="font-bold text-gray-800 mb-1">شحن USB اقتصادي</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">لا حاجة لشراء البطاريات! اشحنيه بسهولة عبر أي منفذ USB واستخدميه لمرات عديدة براحة.</p>
+                        </div>
+                        <div class="feature-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm transition duration-300">
+                            <div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-accent mb-3 text-lg"><i class="fa-solid fa-bullseye"></i></div>
+                            <h4 class="font-bold text-gray-800 mb-1">دقة احترافية عالية</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">مصمم للوصول لأدق الشعيرات وأقصرها بسرعة وسهولة، مع الحفاظ على راحة وأمان بشرتك.</p>
+                        </div>
+                    </div>
+
+                    <!-- رأسان في جهاز واحد -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 mb-8">
+                        <h4 class="font-black text-gray-800 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-arrows-rotate text-secondary"></i> رأسان في جهاز واحد (تجربة متكاملة)
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
+                                <div class="w-12 h-12 shrink-0 bg-primary rounded-full flex items-center justify-center text-accent text-xl"><i class="fa-regular fa-face-smile"></i></div>
+                                <div>
+                                    <h5 class="font-bold text-sm text-gray-800 mb-1">الرأس الدائري</h5>
+                                    <p class="text-sm text-gray-600">مثالي للمساحات الواسعة: الوجه، الذقن، أعلى الشفاه، الرقبة، والخدين.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
+                                <div class="w-12 h-12 shrink-0 bg-primary rounded-full flex items-center justify-center text-accent text-xl"><i class="fa-solid fa-eye"></i></div>
+                                <div>
+                                    <h5 class="font-bold text-sm text-gray-800 mb-1">الرأس المخروطي الدقيق</h5>
+                                    <p class="text-sm text-gray-600">للوصول بسهولة للأماكن الدقيقة: شعر الأنف، الأذن، ورسم وتشذيب الحواجب بدقة عالية.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ملخص سريع -->
+                    <div class="flex flex-wrap gap-2 mb-10">
+                        <span class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold shadow-sm"><i class="fa-solid fa-check text-green-500 ml-1"></i> حجم كأحمر الشفاه</span>
+                        <span class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold shadow-sm"><i class="fa-solid fa-check text-green-500 ml-1"></i> تشغيل هادئ</span>
+                        <span class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold shadow-sm"><i class="fa-solid fa-check text-green-500 ml-1"></i> غطاء واقي مدمج</span>
+                        <span class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold shadow-sm"><i class="fa-solid fa-check text-green-500 ml-1"></i> لجميع أنواع البشرة</span>
+                    </div>
+
+                </div>
+
+                <!-- نموذج الطلب -->
+                <div class="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 shadow-xl shadow-primary/30 mb-6 relative overflow-hidden" id="order-section">
+                    <div class="absolute top-0 right-0 w-full h-2 bg-gradient-to-l from-accent to-secondary"></div>
+                    
+                    <h3 class="font-black text-xl mb-6 text-gray-800 text-center">أكملي طلبك الآن 🛍️</h3>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="package-option active flex items-center justify-between p-4 rounded-xl" onclick="selectPackage(1, 12000, this)">
+                            <div class="flex items-center gap-3">
+                                <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300"></div>
+                                <span class="font-bold text-gray-800 text-sm md:text-base">قطعة واحدة</span>
+                            </div>
+                            <span class="font-black text-gray-800">12,000 د.ع</span>
+                        </div>
+                        
+                        <div class="package-option flex items-center justify-between p-4 rounded-xl relative" onclick="selectPackage(2, 22000, this)">
+                            <div class="absolute -top-3 left-4 bg-accent text-white text-[11px] px-3 py-1 rounded-full font-bold shadow-sm">الأكثر توفيراً وطلباً</div>
+                            <div class="flex items-center gap-3">
+                                <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300"></div>
+                                <span class="font-bold text-gray-800 text-sm md:text-base">قطعتين (عرض خاص)</span>
+                            </div>
+                            <span class="font-black text-gray-800">22,000 د.ع</span>
+                        </div>
+
+                        <div class="package-option flex items-center justify-between p-4 rounded-xl" onclick="selectPackage(3, 30000, this)">
+                            <div class="flex items-center gap-3">
+                                <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300"></div>
+                                <span class="font-bold text-gray-800 text-sm md:text-base">3 قطع (عرض العائلة)</span>
+                            </div>
+                            <span class="font-black text-gray-800">30,000 د.ع</span>
+                        </div>
+                    </div>
+
+                    <form id="orderForm" class="space-y-4">
+                        <div>
+                            <input type="text" id="cust-name" required placeholder="الاسم الكامل" class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:bg-white focus:border-secondary focus:ring-2 focus:ring-primary text-sm font-medium transition">
+                        </div>
+                        <div>
+                            <input type="tel" id="cust-phone" required dir="ltr" placeholder="رقم الهاتف (مثال: 0770...)" class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:bg-white focus:border-secondary focus:ring-2 focus:ring-primary text-sm font-medium text-right transition">
+                        </div>
+                        <div>
+                            <textarea id="cust-address" required rows="2" placeholder="المحافظة، المنطقة، أقرب نقطة دالة" class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:bg-white focus:border-secondary focus:ring-2 focus:ring-primary text-sm font-medium resize-none transition"></textarea>
+                        </div>
+                        
+                        <div id="success-message" class="hidden bg-green-50 text-green-700 p-5 rounded-xl text-center font-bold border border-green-200">
+                            <i class="fa-solid fa-circle-check mb-2 text-3xl block text-green-500"></i>
+                            تم استلام طلبك بنجاح! <br> <span class="text-sm font-normal mt-1 block">سيتصل بك فريقنا لتأكيد الطلب قريباً.</span>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="w-full bg-accent hover:bg-pink-500 text-white font-black py-4 rounded-xl shadow-[0_8px_20px_rgba(230,115,172,0.4)] hover:shadow-none hover:translate-y-1 transition-all duration-300 text-lg flex justify-center items-center gap-2">
+                            اطلب الآن <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="flex justify-center gap-6 mt-6 text-gray-500 text-xs text-center font-bold">
+                        <div class="flex flex-col items-center"><i class="fa-solid fa-truck-fast mb-1 text-xl text-gray-400"></i>توصيل مجاني</div>
+                        <div class="flex flex-col items-center"><i class="fa-solid fa-wallet mb-1 text-xl text-gray-400"></i>الدفع عند الاستلام</div>
+                        <div class="flex flex-col items-center"><i class="fa-solid fa-shield-halved mb-1 text-xl text-gray-400"></i>ضمان الجودة</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- دليل الاستخدام والتنظيف -->
+    <section class="bg-white border-y border-gray-100 py-12 md:py-16 mt-8">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-black text-center text-gray-800 mb-10">🛠️ دليل الاستخدام والعناية</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- طريقة الاستخدام -->
+                <div class="bg-gray-50 p-6 md:p-8 rounded-3xl border border-gray-100">
+                    <h3 class="font-bold text-xl text-accent mb-6 flex items-center gap-2"><i class="fa-solid fa-wand-magic"></i> طريقة الاستخدام</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">1</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">تأكدي من أن البشرة نظيفة وجافة تماماً.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">2</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">اختاري الرأس المناسب للمنطقة المراد إزالة الشعر منها.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">3</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">شغلي الجهاز، ومرريه بلطف بحركات دائرية أو قصيرة دون الضغط بقوة على البشرة.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">4</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">بعد الانتهاء، نظفي الرأس وأعيديه إلى مكانه وأغلقي الغطاء.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- التنظيف والصيانة -->
+                <div class="bg-gray-50 p-6 md:p-8 rounded-3xl border border-gray-100">
+                    <h3 class="font-bold text-xl text-accent mb-6 flex items-center gap-2"><i class="fa-solid fa-spray-can-sparkles"></i> تنظيف الجهاز</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">1</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">أطفئي الجهاز تماماً قبل البدء بعملية التنظيف.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">2</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">انزعي الرأس برفق عبر تدويره وسحبه.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">3</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">استخدمي الفرشاة الصغيرة المرفقة لإزالة الشعيرات العالقة بالداخل.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-7 h-7 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">4</span>
+                            <p class="text-gray-700 text-sm md:text-base pt-1">يمكن غسل الرأس المعدني بالماء (تأكدي من تجفيفه كلياً قبل تركيبه). <strong class="text-red-500">لا تغمري جسم الجهاز بالماء أبداً!</strong></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <p class="text-gray-500 font-bold mb-4">جمالك يبدأ من التفاصيل 💖</p>
+                <a href="#order-section" class="inline-block bg-white text-accent border-2 border-accent hover:bg-accent hover:text-white font-bold py-3 px-8 rounded-full transition-colors duration-300">
+                    اطلبي الآن واحصلي على توصيل مجاني
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-white py-10 text-center border-t border-gray-100">
+        <img src="https://cdn.imgpile.com/f/ziX3TUa.png" alt="شعار ديمة" class="h-10 w-auto mx-auto mb-4 grayscale opacity-50">
+        <p class="text-sm text-gray-400 font-semibold">الجمال يبدأ من هنا. متجر دِيمة © 2026 جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        let selectedQty = 1;
+        let selectedPrice = 12000;
+
+        function selectPackage(qty, price, element) {
+            selectedQty = qty;
+            selectedPrice = price;
+            document.getElementById('display-price').innerText = price.toLocaleString();
+            document.querySelectorAll('.package-option').forEach(opt => opt.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const successMsg = document.getElementById('success-message');
+            const name = document.getElementById('cust-name').value;
+            const phone = document.getElementById('cust-phone').value;
+            const address = document.getElementById('cust-address').value;
+
+            // توكن البوت والآيدي الخاص بك
+            const BOT_TOKEN = "8737696706:AAGVPTVPNQ4Xf_ygMJOkagKv2gcOcneCNFE"; 
+            const CHAT_ID = "1064948957"; 
+
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> جاري الإرسال...';
+            btn.disabled = true;
+
+            let qtyText = selectedQty === 1 ? 'قطعة واحدة' : selectedQty === 2 ? 'قطعتين' : '3 قطع';
+            const textMessage = `🛍️ *طلب جديد من متجر دِيمة* 🛍️\n\n📦 *المنتج:* قلم إزالة الشعر (2 في 1)\n🔢 *الكمية:* ${qtyText}\n💰 *الإجمالي:* ${selectedPrice.toLocaleString()} دينار\n👤 *الاسم:* ${name}\n📞 *الهاتف:* ${phone}\n📍 *العنوان:* ${address}`;
+
+            fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: CHAT_ID, text: textMessage, parse_mode: 'Markdown' })
+            })
+            .then(response => {
+                if (response.ok) {
+                    btn.classList.add('hidden');
+                    successMsg.classList.remove('hidden');
+                } else {
+                    alert("حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى.");
+                    btn.innerHTML = 'اطلب الآن <i class="fa-solid fa-arrow-left"></i>';
+                    btn.disabled = false;
+                }
+            })
+            .catch(error => {
+                alert("تأكد من اتصالك بالإنترنت.");
+                btn.innerHTML = 'اطلب الآن <i class="fa-solid fa-arrow-left"></i>';
+                btn.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
